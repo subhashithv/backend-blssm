@@ -13,7 +13,9 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 
 // Enable CORS
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:3000', 'https://blossomsbotique.com']
+}));
 
 // Middleware
 app.use(bodyParser.json());
