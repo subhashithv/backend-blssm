@@ -14,7 +14,8 @@ connectDB();
 
 // Enable CORS
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://blossomsbotique.com']
+  origin: ['http://localhost:3000', 'https://blossomsbotique.com'],
+  credentials: true
 }));
 
 // Middleware
